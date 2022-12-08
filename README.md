@@ -21,7 +21,7 @@ HTML, CSS, Javascript
 
 ## Credits
 
-n/a
+The HTML and CSS of this application was provided as starter code for an assignment for the University of Richmond coding bootcamp.
 
 ## License
 
