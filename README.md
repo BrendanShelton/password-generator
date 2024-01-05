@@ -2,6 +2,7 @@
 
 ## Description
 
+
 In order to be most secure, a password needs to long and contain a variety of characters. This application randomly generates a series of characters after the user specifies the length and which categories of characters should be included in that series. In creating this application, I found out how to generate random strings from sets of characters using Javascript.
 
 ## Installation
@@ -13,15 +14,35 @@ N/A
 Click "Generate Password" and answer the prompts asking how long the randomly generated password should be, whether it will include lowercase letters, uppercase letters, numbers, and special characters. The randomly generated series of characters will appear in the box above the  "Generate Password" button.
 
 
+=======
+In order to be most secure, a password needs to be long and contain a variety of characters. This application generates a string of characters given the parameters which the user inputs.
+
+## Installation
+
+n/a
+
+## Usage
+
+click on "Generate Password" and answer all the prompts. A string will appear in the center box 
+
+https://brendanshelton.github.io/password-generator/
+
 ![screenshot of password generator](password-generator-screenshot.png)
 
-## Credits
+## Technologies used
 
 N/A
 
 ## License
 
 MIT License
+=======
+HTML, CSS, Javascript
+
+## Credits
+
+The HTML and CSS of this application was provided as starter code for an assignment for the University of Richmond coding bootcamp.
+
 
 Copyright (c) 2022 BrendanShelton
 
