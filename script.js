@@ -45,9 +45,9 @@ function generatePassword() {
   var lowercaseList ='abcdefghijklmnopqrstuvwxyz';
   var uppercaseList = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
   var numberList ='0123456789'
-  var specialCharactersList = ' !"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
+  var specialCharactersList = '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
   //the randomly generated password
-  var randomString = ' ';
+  var randomString = '';
 
   //adds each chosen character type to the list of characters and adds one character of each chosen type to the password
   if (includeSpecialCharacters) {
