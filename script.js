@@ -1,20 +1,30 @@
-// Assignment code here
-
 function generatePassword() {
   //variables for password criteria
-  var length;
-  var includeSpecialCharacters;
-  var includeUppercase;
-  var includeLowercase;
-  var includeNumber;
+  var length = document.querySelector("#checkLength").value;
+  var includeSpecialCharacters = document.querySelector("#checkSpecialCharacter").checked;
+  var includeUppercase = document.querySelector("#checkUpper").checked;
+  var includeLowercase = document.querySelector("#checkLower").checked; 
+  var includeNumber = document.querySelector("#checkNumber").checked;;
 
-  length = window.prompt("Enter a password length of 8 or more or 128 or less", "enter number")
-  while (length < 8 || length > 128) {
+  console.log(length);
+  console.log(includeSpecialCharacters);
+
+  
+  /*while (length < 8 || length > 128) {
   length = window.prompt("The password length cannot be less than 8 characters or more than 128", "enter number")
+  }*/
+  if (length <= 0 || length > 128) {
+    window.alert("choose a number greater than zero and less than 128");
+    return ""
+  }
+
+  if (!includeSpecialCharacters && !includeUppercase && !includeLowercase && !includeNumber) {
+    window.alert("Choose characters to include in the password.");
+    return ""
   }
 
   //prompts user for input and tests whether input has been received
-  var criterionChosen = false
+  /*var criterionChosen = false
   while (!criterionChosen) {
     
     if (includeSpecialCharacters = window.confirm("select 'OK' if if the password needs to include special characters.")) {
@@ -37,7 +47,7 @@ function generatePassword() {
       window.alert("Please choose which characters to include in the password")
     }
     
-  }
+  }*/
   
   //list of characters from which the 
   var characters = ''
@@ -72,8 +82,9 @@ function generatePassword() {
   }
   
   //randomly generates the remaining length of the password
-  const charactersLength = characters.length;  
-  for (var i = 0; i < length; i++) {
+  const charactersLength = characters.length;
+  const lengthSoFar  = randomString.length;
+  for (var i = lengthSoFar; i < length; i++) {
     randomString += characters.charAt(Math.floor(Math.random() * charactersLength));
   }
 
